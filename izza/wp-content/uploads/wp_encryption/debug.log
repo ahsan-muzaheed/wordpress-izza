@@ -1,0 +1,22 @@
+<span class="error"><b>ERROR:</b> CREATE_CLIENT:WPLEClient\Exceptions\LEFunctionsException: Could not generate key pair! Check your OpenSSL configuration. OpenSSL Error: 
+error:02001003:system library:fopen:No such process
+error:2006D080:BIO routines:BIO_new_file:no such file
+error:0E078072:configuration file routines:def_load:no such file
+error:02001003:system library:fopen:No such process
+error:2006D080:BIO routines:BIO_new_file:no such file
+error:0E078072:configuration file routines:def_load:no such file
+ in C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\lib\Exceptions\LEFunctionsException.php:51
+Stack trace:
+#0 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\lib\LEFunctions.php(65): WPLEClient\Exceptions\LEFunctionsException::GenerateKeypairException('Could not gener...')
+#1 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\lib\LEAccount.php(74): WPLEClient\LEFunctions::RSAGenerateKeys(NULL, 'C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\lib\LEClient.php(141): WPLEClient\LEAccount-&gt;__construct(Object(WPLEClient\LEConnector), 1, 'akhikajol2255@g...', Array)
+#3 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\classes\le-core.php(174): WPLEClient\LEClient-&gt;__construct('akhikajol2255@g...', false, 1, 'C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\classes\le-core.php(154): WPLE_Core-&gt;wple_create_client()
+#5 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\classes\le-core.php(122): WPLE_Core-&gt;wple_generate_verify_ssl()
+#6 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\admin\le_admin.php(533): WPLE_Core-&gt;__construct(Array)
+#7 C:\xampp\htdocs\izzadeen2\wp-content\plugins\wp-letsencrypt-ssl\admin\le_admin.php(1811): WPLE_Admin-&gt;wple_save_email_generate_certs()
+#8 C:\xampp\htdocs\izzadeen2\wp-includes\class-wp-hook.php(307): WPLE_Admin-&gt;wple_admin_init_hooks('')
+#9 C:\xampp\htdocs\izzadeen2\wp-includes\class-wp-hook.php(331): WP_Hook-&gt;apply_filters(NULL, Array)
+#10 C:\xampp\htdocs\izzadeen2\wp-includes\plugin.php(474): WP_Hook-&gt;do_action(Array)
+#11 C:\xampp\htdocs\izzadeen2\wp-admin\admin.php(175): do_action('admin_init')
+#12 {main}</span>
